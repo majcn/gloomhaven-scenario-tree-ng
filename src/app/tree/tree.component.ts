@@ -295,7 +295,8 @@ export class TreeComponent implements OnChanges {
         .css({
           'visibility': 'hidden',
           'line-color': '#69f0ae',
-          'target-arrow-color': '#69f0ae'
+          'target-arrow-color': '#69f0ae',
+          'opacity': '0'
         })
         .selector('edge[type = "blocks"]')
         .css({
