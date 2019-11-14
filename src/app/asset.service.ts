@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as cloneDeep from 'lodash.clonedeep';
 @Injectable()
@@ -8,21 +8,24 @@ export class AssetService {
   private defaultScenariosJSON: any;
   constructor(private http: HttpClient) { }
   public getScenariosJSON(): Observable<any> {
-    const encodedTree = localStorage.getItem('gloomhavenScenarioTree');
-    return this.http.get<any>('./assets/scenarios.json').pipe(
-      map(scenarios => {
+    // const encodedTree = localStorage.getItem('gloomhavenScenarioTree');
+    const scenariosObservable = this.http.get<any>('./assets/scenarios.json');
+    const progressObservable = this.http.get<any>('./assets/progress.json');
+
+    return forkJoin([scenariosObservable, progressObservable]).pipe(
+      map(([scenarios, progress]) => {
         // First sort the nodes so that any ui using them keeps order consistent
         scenarios.nodes = scenarios.nodes.sort((n1, n2) => +n1.data.id - +n2.data.id);
         this.defaultScenariosJSON = cloneDeep(scenarios);
-        if (encodedTree) {
-          scenarios.nodes = this.getDecodedScenarios(scenarios.nodes, encodedTree).nodes;
+        if (progress) {
+          scenarios.nodes = this.getDecodedScenarios(scenarios.nodes, progress).nodes;
         }
         return scenarios;
       })
     );
   }
-  public getDecodedScenarios(currentNodes, savedScenarioString) {
-    const savedScenarios = JSON.parse(savedScenarioString);
+  public getDecodedScenarios(currentNodes, savedScenarios) {
+    // const savedScenarios = JSON.parse(savedScenarioString);
     currentNodes.forEach((node, index) => {
       const savedNode = savedScenarios.nodes.find(saved => saved.id === node.data.id);
       const matchedBase = this.defaultScenariosJSON.nodes.find(base => base.data.id === node.data.id);
