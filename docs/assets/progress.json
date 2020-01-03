@@ -21,7 +21,11 @@
       "status": "complete",
       "treasure": { "28": { "looted": "true" }, "04": { "looted": "true" } }
     },
-    { "id": "6", "status": "incomplete" },
+    {
+      "id": "6",
+      "status": "complete",
+      "treasure": { "50": { "looted": "true" } }
+    },
     { "id": "7", "status": "complete" },
     {
       "id": "8",
@@ -43,14 +47,22 @@
       "treasure": { "26": { "looted": "true" } }
     },
     { "id": "15" },
-    { "id": "16", "status": "incomplete" },
+    {
+      "id": "16",
+      "status": "complete",
+      "treasure": { "01": { "looted": "true" } }
+    },
     { "id": "17" },
     {
       "id": "18",
       "status": "complete",
       "treasure": { "63": { "looted": "true" } }
     },
-    { "id": "19", "status": "complete" },
+    {
+      "id": "19",
+      "status": "complete",
+      "treasure": { "17": { "looted": "true" } }
+    },
     {
       "id": "20",
       "status": "complete",
@@ -71,16 +83,20 @@
       "status": "complete",
       "treasure": { "39": { "looted": "true" }, "72": { "looted": "true" } }
     },
-    { "id": "24" },
-    { "id": "25" },
+    { "id": "24", "status": "incomplete" },
+    { "id": "25", "status": "incomplete" },
     {
       "id": "26",
       "status": "complete",
       "treasure": { "66": { "looted": "true" } }
     },
     { "id": "27", "status": "incomplete" },
-    { "id": "28", "status": "incomplete" },
-    { "id": "29" },
+    {
+      "id": "28",
+      "status": "complete",
+      "treasure": { "32": { "looted": "true" } }
+    },
+    { "id": "29", "status": "incomplete" },
     { "id": "30" },
     {
       "id": "31",
@@ -107,7 +123,7 @@
     { "id": "49" },
     { "id": "50" },
     { "id": "51" },
-    { "id": "52" },
+    { "id": "52", "status": "incomplete" },
     { "id": "53" },
     { "id": "54" },
     { "id": "55", "status": "complete" },
@@ -116,8 +132,12 @@
       "status": "complete",
       "treasure": { "45": { "looted": "true" } }
     },
-    { "id": "57", "status": "incomplete" },
-    { "id": "58" },
+    {
+      "id": "57",
+      "status": "complete",
+      "treasure": { "22": { "looted": "true" }, "03": { "looted": "true" } }
+    },
+    { "id": "58", "status": "complete" },
     { "id": "59" },
     { "id": "60" },
     { "id": "61" },
