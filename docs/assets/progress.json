@@ -83,7 +83,11 @@
       "status": "complete",
       "treasure": { "39": { "looted": "true" }, "72": { "looted": "true" } }
     },
-    { "id": "24", "status": "incomplete" },
+    {
+      "id": "24",
+      "status": "complete",
+      "treasure": { "70": { "looted": "true" } }
+    },
     { "id": "25", "status": "incomplete" },
     {
       "id": "26",
@@ -96,14 +100,18 @@
       "status": "complete",
       "treasure": { "32": { "looted": "true" } }
     },
-    { "id": "29", "status": "incomplete" },
-    { "id": "30" },
+    {
+      "id": "29",
+      "status": "complete",
+      "treasure": { "41": { "looted": "true" } }
+    },
+    { "id": "30", "status": "incomplete" },
     {
       "id": "31",
       "status": "complete",
       "treasure": { "69": { "looted": "true" } }
     },
-    { "id": "32" },
+    { "id": "32", "status": "incomplete" },
     { "id": "33" },
     { "id": "34" },
     { "id": "35", "status": "incomplete" },
@@ -123,9 +131,17 @@
     { "id": "49" },
     { "id": "50" },
     { "id": "51" },
-    { "id": "52", "status": "incomplete" },
-    { "id": "53" },
-    { "id": "54" },
+    { "id": "52", "status": "complete" },
+    {
+      "id": "53",
+      "status": "complete",
+      "treasure": { "31": { "looted": "true" } }
+    },
+    {
+      "id": "54",
+      "status": "complete",
+      "treasure": { "25": { "looted": "true" } }
+    },
     { "id": "55", "status": "complete" },
     {
       "id": "56",
@@ -140,9 +156,13 @@
     { "id": "58", "status": "complete" },
     { "id": "59" },
     { "id": "60" },
-    { "id": "61" },
-    { "id": "62" },
-    { "id": "63" },
+    { "id": "61", "status": "complete" },
+    {
+      "id": "62",
+      "status": "complete",
+      "treasure": { "59": { "looted": "true" } }
+    },
+    { "id": "63", "status": "incomplete" },
     { "id": "64" },
     { "id": "65" },
     { "id": "66", "status": "incomplete" },
@@ -155,7 +175,7 @@
     { "id": "73" },
     { "id": "74" },
     { "id": "75" },
-    { "id": "76" },
+    { "id": "76", "status": "incomplete" },
     { "id": "77" },
     { "id": "78" },
     { "id": "79" },
