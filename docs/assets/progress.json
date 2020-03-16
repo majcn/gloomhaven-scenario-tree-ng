@@ -149,12 +149,16 @@
     { "id": "43", "status": "complete" },
     { "id": "44" },
     { "id": "45" },
-    { "id": "46", "status": "incomplete" },
+    {
+      "id": "46",
+      "status": "complete",
+      "treasure": { "48": { "looted": "true" } }
+    },
     { "id": "47" },
     { "id": "48" },
     { "id": "49" },
     { "id": "50" },
-    { "id": "51" },
+    { "id": "51", "status": "incomplete" },
     { "id": "52", "status": "complete" },
     {
       "id": "53",
