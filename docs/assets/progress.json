@@ -133,7 +133,11 @@
     { "id": "35", "status": "incomplete" },
     { "id": "36", "status": "incomplete" },
     { "id": "37", "status": "incomplete" },
-    { "id": "38", "status": "incomplete" },
+    {
+      "id": "38",
+      "status": "complete",
+      "treasure": { "29": { "looted": "true" } }
+    },
     {
       "id": "39",
       "status": "complete",
@@ -151,7 +155,7 @@
     },
     { "id": "42" },
     { "id": "43", "status": "complete" },
-    { "id": "44" },
+    { "id": "44", "status": "incomplete" },
     { "id": "45" },
     {
       "id": "46",
@@ -159,7 +163,7 @@
       "treasure": { "48": { "looted": "true" } }
     },
     { "id": "47" },
-    { "id": "48" },
+    { "id": "48", "status": "incomplete" },
     { "id": "49" },
     { "id": "50" },
     { "id": "51", "status": "incomplete" },
@@ -232,7 +236,7 @@
     { "id": "86" },
     { "id": "87" },
     { "id": "88" },
-    { "id": "89" },
+    { "id": "89", "status": "incomplete" },
     { "id": "90" },
     { "id": "91" },
     { "id": "92" },
