@@ -199,8 +199,12 @@
       "treasure": { "59": { "looted": "true" } }
     },
     { "id": "63", "status": "incomplete" },
-    { "id": "64" },
-    { "id": "65" },
+    {
+      "id": "64",
+      "status": "complete",
+      "treasure": { "09": { "looted": "true" } }
+    },
+    { "id": "65", "status": "incomplete" },
     {
       "id": "66",
       "status": "complete",
